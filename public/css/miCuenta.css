@@ -1,0 +1,401 @@
+a {
+  color: #6caddf;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  width: 100%;
+}
+input[type="text"]:active,
+input[type="email"]:active,
+input[type="password"]:active,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-bottom: 3px solid #6caddf;
+}
+input[type="checkbox"] {
+  cursor: pointer;
+}
+main {
+  top: 80px;
+  position: relative;
+}
+p {
+  color: #000;
+}
+.ocultar {
+  display: none;
+}
+.cursorMano {
+  cursor: pointer;
+}
+.centrar {
+  text-align: center;
+}
+.sinPaddingRL {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.sinPaddingRight {
+  padding-right: 0 !important;
+}
+.sidebar {
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  right: 0;
+  top: 50px;
+  z-index: 1000;
+}
+.btnVerdeClaro {
+  background: #6dcd5e;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+}
+.selectUrbaner {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background: #fff;
+  border: none !important;
+  border-bottom: 2px solid #ccc !important;
+  border-radius: 0 !important;
+  color: #02a388 !important;
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: box !important;
+  display: flex !important;
+  display: webkit-flex;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  -o-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  outline: none !important;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+}
+.selectUrbaner span:nth-of-type(1) {
+  margin-right: 15px;
+}
+.headerCliente {
+  -webkit-box-shadow: 0px 3px 2px #cbc9cf;
+  box-shadow: 0px 3px 2px #cbc9cf;
+  background: #303e47;
+  height: 75px;
+}
+.headerCliente figure {
+  margin: 1em 20px !important;
+}
+.headerCliente .headerCliente__foto img {
+  height: 48px;
+}
+.headerCliente .headerCliente__logo img {
+  height: 48px;
+}
+.headerCliente .headerCliente__navegacion {
+  text-align: center;
+}
+.headerCliente .headerCliente__navegacion a {
+  color: #fff;
+}
+.headerCliente .headerCliente__nuevoEnvio {
+  background: #6dcd5e;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+}
+.headerCliente .headerCliente__saldo p {
+  color: #fff;
+  margin: 0;
+  text-align: right;
+}
+.activarLink {
+  border-bottom: 3px solid #e79d35 !important;
+}
+.boxCuenta {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 40px 0;
+}
+.miCuenta {
+  background: #f3f3f3;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  height: 100%;
+}
+.miCuenta .miCuenta__content {
+  margin: 0 auto;
+  width: 90%;
+}
+.miCuenta .miCuenta__content .miCuenta__content__navegacion {
+  margin: 0 auto;
+  text-align: center;
+  width: 98%;
+}
+.miCuenta .miCuenta__content .miCuenta__content__navegacion a {
+  border-bottom: 1px solid #000;
+  display: block;
+  color: #000;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+  text-decoration: none;
+  width: 100%;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item {
+  margin-top: 50px;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item a {
+  color: #6caddf !important;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__perfil .miCuenta__content__item__perfil__informacionGeneral {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 60px 0;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__perfil .miCuenta__content__item__perfil__informacionGeneral .miCuenta__content__item__perfil__informacionGeneral__content {
+  margin: 0 auto;
+  width: 80%;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__perfil .miCuenta__content__item__perfil__informacionGeneral .miCuenta__content__item__perfil__informacionGeneral__content input[type="text"]:active,
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__perfil .miCuenta__content__item__perfil__informacionGeneral .miCuenta__content__item__perfil__informacionGeneral__content input[type="text"]:focus {
+  border-bottom: 2px solid #6caddf;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__perfil .miCuenta__content__item__perfil__informacionGeneral .miCuenta__content__item__perfil__informacionGeneral__content .row .col-md-10 .row:nth-of-type(1) {
+  margin-top: 60px;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__perfil .miCuenta__content__item__perfil__informacionGeneral .miCuenta__content__item__perfil__informacionGeneral__content .row .col-md-10 .row:nth-of-type(2),
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__perfil .miCuenta__content__item__perfil__informacionGeneral .miCuenta__content__item__perfil__informacionGeneral__content .row .col-md-10 .row:nth-of-type(3),
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__perfil .miCuenta__content__item__perfil__informacionGeneral .miCuenta__content__item__perfil__informacionGeneral__content .row .col-md-10 .row:nth-of-type(4),
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__perfil .miCuenta__content__item__perfil__informacionGeneral .miCuenta__content__item__perfil__informacionGeneral__content .row .col-md-10 .row:nth-of-type(5) {
+  margin-top: 25px;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__perfil .miCuenta__content__item__perfil__clave {
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-top: 40px;
+  padding: 20px 0;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__perfil .miCuenta__content__item__perfil__clave .miCuenta__content__item__perfil__clave__content {
+  margin: 0 auto;
+  width: 56%;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__perfil .miCuenta__content__item__perfil__clave .miCuenta__content__item__perfil__clave__content p {
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__perfil .miCuenta__content__item__perfil__clave .miCuenta__content__item__perfil__clave__content .col-md-8 p {
+  font-size: 22px;
+  margin-top: 5px;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__medioPago h3 {
+  font-weight: normal;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__medioPago .btnValidar {
+  font-size: 17px;
+  padding: 5px 30px;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__medioPago .line {
+  background: #ccc;
+  height: 1px;
+  margin-top: 20px;
+  width: 93%;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__medioPago .miCuenta__content__item__medioPago__tarjetaCreditoDebito,
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__medioPago .miCuenta__content__item__medioPago__cuponRegalo {
+  margin-top: 30px;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__medioPago .miCuenta__content__item__medioPago__monederoUrbaner__content,
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__medioPago .miCuenta__content__item__medioPago__tarjetaCreditoDebito__content,
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__medioPago .miCuenta__content__item__medioPago__cuponRegalo__content {
+  margin: 0 auto;
+  width: 90%;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__medioPago .miCuenta__content__item__medioPago__monederoUrbaner .miCuenta__content__item__medioPago__monederoUrbaner__content__detalle {
+  margin: 30px auto 0 auto;
+  width: 77%;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__medioPago .miCuenta__content__item__medioPago__monederoUrbaner .miCuenta__content__item__medioPago__monederoUrbaner__content__detalle .row:nth-of-type(2),
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__medioPago .miCuenta__content__item__medioPago__monederoUrbaner .miCuenta__content__item__medioPago__monederoUrbaner__content__detalle .row:nth-of-type(3),
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__medioPago .miCuenta__content__item__medioPago__monederoUrbaner .miCuenta__content__item__medioPago__monederoUrbaner__content__detalle .row:nth-of-type(4),
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__medioPago .miCuenta__content__item__medioPago__monederoUrbaner .miCuenta__content__item__medioPago__monederoUrbaner__content__detalle .row:nth-of-type(5),
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__medioPago .miCuenta__content__item__medioPago__monederoUrbaner .miCuenta__content__item__medioPago__monederoUrbaner__content__detalle .row:nth-of-type(6) {
+  margin-top: 20px;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__medioPago .miCuenta__content__item__medioPago__monederoUrbaner .miCuenta__content__item__medioPago__monederoUrbaner__content__detalle select {
+  margin: 0 auto;
+  width: 97%;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__medioPago .miCuenta__content__item__medioPago__tarjetaCreditoDebito__content .miCuenta__content__item__medioPago__tarjetaCreditoDebito__content__detalle {
+  margin: 30px auto 0 auto;
+  width: 77%;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__medioPago .miCuenta__content__item__medioPago__tarjetaCreditoDebito__content .miCuenta__content__item__medioPago__tarjetaCreditoDebito__content__detalle .row:nth-of-type(1),
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__medioPago .miCuenta__content__item__medioPago__tarjetaCreditoDebito__content .miCuenta__content__item__medioPago__tarjetaCreditoDebito__content__detalle .row:nth-of-type(2),
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__medioPago .miCuenta__content__item__medioPago__tarjetaCreditoDebito__content .miCuenta__content__item__medioPago__tarjetaCreditoDebito__content__detalle .row:nth-of-type(3),
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__medioPago .miCuenta__content__item__medioPago__tarjetaCreditoDebito__content .miCuenta__content__item__medioPago__tarjetaCreditoDebito__content__detalle .row:nth-of-type(4) {
+  margin-top: 20px;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__medioPago button {
+  border: none;
+  font-size: 16px;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__medioPago .btnAdd {
+  background: #6dcd5e;
+  color: #fff;
+  padding: 7px 30px;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__medioPago .btnCancelar {
+  background: #fff;
+  border: 2px solid #6dcd5e;
+  color: #6dcd5e;
+  padding: 5px 30px;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__facturacion .miCuenta__content__item__facturacion__informacion {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 60px 0;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__facturacion .miCuenta__content__item__facturacion__informacion .miCuenta__content__item__facturacion__informacion__content {
+  margin: 0 auto;
+  width: 80%;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__facturacion .miCuenta__content__item__facturacion__informacion .miCuenta__content__item__facturacion__informacion__content h5 {
+  margin-top: 55px;
+  font-weight: 400;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__facturacion .miCuenta__content__item__facturacion__informacion .miCuenta__content__item__facturacion__informacion__content input[type="text"]:active,
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__facturacion .miCuenta__content__item__facturacion__informacion .miCuenta__content__item__facturacion__informacion__content input[type="text"]:focus {
+  border-bottom: 2px solid #6caddf;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__facturacion .miCuenta__content__item__facturacion__informacion .miCuenta__content__item__facturacion__informacion__content .row .col-md-12 .row:nth-of-type(1) {
+  margin-top: 30px;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__facturacion .miCuenta__content__item__facturacion__informacion .miCuenta__content__item__facturacion__informacion__content .row .col-md-12 .row:nth-of-type(2),
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__facturacion .miCuenta__content__item__facturacion__informacion .miCuenta__content__item__facturacion__informacion__content .row .col-md-12 .row:nth-of-type(3),
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__facturacion .miCuenta__content__item__facturacion__informacion .miCuenta__content__item__facturacion__informacion__content .row .col-md-12 .row:nth-of-type(4),
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__facturacion .miCuenta__content__item__facturacion__informacion .miCuenta__content__item__facturacion__informacion__content .row .col-md-12 .row:nth-of-type(5) {
+  margin-top: 25px;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__favoritos .miCuenta__content__item__favoritos__informacion {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 60px 0;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__favoritos .miCuenta__content__item__favoritos__informacion .miCuenta__content__item__favoritos__informacion__content {
+  margin: 0 auto;
+  width: 80%;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__favoritos .miCuenta__content__item__favoritos__informacion .miCuenta__content__item__favoritos__informacion__content input[type="text"]:active,
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__favoritos .miCuenta__content__item__favoritos__informacion .miCuenta__content__item__favoritos__informacion__content input[type="text"]:focus {
+  border-bottom: 2px solid #6caddf;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__favoritos .miCuenta__content__item__favoritos__informacion .miCuenta__content__item__favoritos__informacion__content .row .col-md-8 .row:nth-of-type(1) {
+  margin-top: 60px;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__favoritos .miCuenta__content__item__favoritos__informacion .miCuenta__content__item__favoritos__informacion__content .row .col-md-8 .row:nth-of-type(2),
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__favoritos .miCuenta__content__item__favoritos__informacion .miCuenta__content__item__favoritos__informacion__content .row .col-md-8 .row:nth-of-type(3),
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__favoritos .miCuenta__content__item__favoritos__informacion .miCuenta__content__item__favoritos__informacion__content .row .col-md-8 .row:nth-of-type(4),
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__favoritos .miCuenta__content__item__favoritos__informacion .miCuenta__content__item__favoritos__informacion__content .row .col-md-8 .row:nth-of-type(5) {
+  margin-top: 25px;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__favoritos .miCuenta__content__item__favoritos__guardar {
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-top: 40px;
+  padding: 20px 0;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__favoritos .miCuenta__content__item__favoritos__guardar .miCuenta__content__item__favoritos__guardar__content {
+  margin: 0 auto;
+  width: 80%;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__favoritos .miCuenta__content__item__favoritos__guardar .miCuenta__content__item__favoritos__guardar__content h5 {
+  margin-bottom: 25px;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__favoritos .miCuenta__content__item__favoritos__guardar .miCuenta__content__item__favoritos__guardar__content p {
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__favoritos .miCuenta__content__item__favoritos__guardar .miCuenta__content__item__favoritos__guardar__content .col-md-8 p {
+  font-size: 22px;
+  margin-top: 5px;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item .miCuenta__content__item__favoritos .miCuenta__content__item__favoritos__guardar .miCuenta__content__item__favoritos__guardar__content figure img {
+  height: 27px;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item__ComparteGana .miCuenta__content__item__ComparteGana__informacion {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 60px 0;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item__ComparteGana .miCuenta__content__item__ComparteGana__informacion .miCuenta__content__item__ComparteGana__informacion__content {
+  margin: 0 auto;
+  width: 65%;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item__ComparteGana .miCuenta__content__item__ComparteGana__informacion .miCuenta__content__item__ComparteGana__informacion__content h5 {
+  font-weight: 400;
+  text-align: center;
+  color: #6b6b76;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item__ComparteGana .miCuenta__content__item__ComparteGana__informacion .miCuenta__content__item__ComparteGana__informacion__content p {
+  font-weight: 300;
+  margin: 0;
+  color: #6b6b76;
+  padding: 0;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item__ComparteGana .miCuenta__content__item__ComparteGana__informacion .miCuenta__content__item__ComparteGana__informacion__content .col-md-12 {
+  padding: 0% 20% 4% 20%;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item__ComparteGana .miCuenta__content__item__ComparteGana__informacion .miCuenta__content__item__ComparteGana__informacion__content .col-xs {
+  text-align: center;
+  padding: 0px 40px 0px 40px;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item__ComparteGana .miCuenta__content__item__ComparteGana__informacion .miCuenta__content__item__ComparteGana__informacion__content figure img {
+  height: 80px;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item__ComparteGana .miCuenta__content__item__ComparteGana__referido {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 30px 0;
+  margin-top: 40px;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item__ComparteGana .miCuenta__content__item__ComparteGana__referido .miCuenta__content__item__ComparteGana__referido__content {
+  margin: 0 auto;
+  width: 65%;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item__ComparteGana .miCuenta__content__item__ComparteGana__referido .miCuenta__content__item__ComparteGana__referido__content h4 {
+  font-weight: 400;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item__ComparteGana .miCuenta__content__item__ComparteGana__referido .miCuenta__content__item__ComparteGana__referido__content p {
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+.miCuenta .miCuenta__content .miCuenta__content__item__ComparteGana .miCuenta__content__item__ComparteGana__referido .miCuenta__content__item__ComparteGana__referido__content .col-md-12 {
+  text-align: center;
+}

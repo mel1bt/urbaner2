@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Registro Cliente Persona</title>
+    <link rel="stylesheet" href="../librerias/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../librerias/bootstrap/dist/css/bootstrap-flex.min.css" />
+    <link rel="stylesheet" href="css/registroClientePersona.css" />
+</head>
+
+<body>
+    <header class="headerCliente container-fluid navbar">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row flex-items-xs-middle">
+                    <div class="col-md-12">
+                        <figure class="headerCliente__logo"><img src="img/logo.png" alt="logo de Urbaner" /></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="registroClientePersona">
+        <div class="registroClientePersona__content">
+            <div class="row flex-items-xs-middle">
+                <div class="col-md-12">
+                    <h2 class="centrar">REGÍSTRATE</h2>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5>Datos de Perfil</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6"><input type="text" id="nombrePersona" name="nombrePersona" placeholder="* NOMBRE" class="validateString" /></div>
+                        <div class="col-md-6"><input type="text" id="apellidoPersona" name="apellidoPersona" placeholder="* APELLIDOS" class="validateString" /></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12"><input type="text" id="numeroTelefonicoP" maxlength="12" name="numeroTelefonicoP" placeholder="* NÚMERO TELEFONICO" class="validateNumber" /></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12"><input type="text" id="direccionPersona" name="direccionPersona" placeholder="* DIRECCIÓN" /></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5>Datos de la Cuenta</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12"><input type="text" id="emailPersona" name="emailPersona" placeholder="* EMAIL" /></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6"><input type="password" id="passwordPersona" name="password" placeholder="* CONTRASEÑA" /></div>
+                        <div class="col-md-6"><input type="password" id="confirmPasswordPersona" name="confirmPassword" placeholder="* CONFIRMAR CONTRASEÑA" /></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12"><input type="text" id="codigoCupon" name="codigoCupon" placeholder="CÓDIGO DE CUPÓN" /></div>
+                    </div>
+                    <div class="row">
+                        <div class="registroClientePersona__content__btnCreaCuentaPersona"><button id="registrarPersona"> CREAR CUENTA</button></div>
+                    </div>
+                </div>
+                <div class="registroClientePersona__content__aceptaTerminos">
+                    <p>Al hacer clic en "CREAR CUENTA" acepta los<a href=""> términos y Condiciones</a> de URBANER</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</body>
+
+</html>

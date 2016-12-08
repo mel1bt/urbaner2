@@ -1,0 +1,17 @@
+
+
+#borde{
+
+    background-color: yellow;
+}
+
+#blue{
+    color: blue;
+}
+
+.marco{
+    border: 1px solid black;
+    width: 180px;
+}
+
+

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Activo</title>
+    <link rel="stylesheet" href="../librerias/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../librerias/bootstrap/dist/css/bootstrap-flex.min.css" />
+    <link rel="stylesheet" href="css/activo.css" />
+</head>
+
+<body>
+    <header class="headerCliente container-fluid navbar-fixed-top">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row flex-items-xs-middle">
+                    <div class="col-md-4">
+                        <figure class="headerCliente__logo">
+                            <a href=""><img src="../assets/img/logo.png" alt="logo de Urbaner" /></a>
+                        </figure>
+                    </div>
+                    <div class="col-md-8">
+                        <nav class="headerCliente__navegacion row">
+                            <div class="col-xs"><a href="activo.html">Activo</a></div>
+                            <div class="col-xs"><a href="historial.html">Historial</a></div>
+                            <div class="col-xs"><a href="borrador.html">Borrador</a></div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row flex-items-xs-middle">
+                    <div class="col-md-6 headerCliente__saldo">
+                        <p>S/ 105.00</p>
+                    </div>
+                    <div class="col-md-3"><button class="headerCliente__nuevoEnvio">NUEVO ENVÍO</button></div>
+                    <div class="col-md-3">
+                        <figure class="headerCliente__foto"><img src="../assets/img/cliente.jpg" class="rounded-circle" /></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="Activo">
+        <div class="Activo__content">
+            <div class="row flex-items-xs-middle">
+                <div class="col-md-6 center">
+                    <div class="description">
+                        <p>En Activos se listarán los pedidos con estado, PENDIENTE, ACEPTADO, EN CAMINO A RECOJO, EN RECOJO, EN RUTA A ENTREGA y EN ENTREGA</p>
+                    </div>
+                </div>
+                <div class="col-md-6 center"><span> <img src="../assets/img/activo/downloads.png" alt="" class="icon__export"/></span><a href=" " class="icon">  		EXPORTAR</a></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table__content">
+                        <thead>
+                            <tr class="row">
+                                <th>TIPO</th>
+                                <th>ESTADO</th>
+                                <th>ID</th>
+                                <th>ORIGEN</th>
+                                <th>DESTINO</th>
+                                <th>COURIER</th>
+                                <th>TARIFA (S/)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="row tipoPedido">
+                                <td><img src="../assets/img/activo/express.png" alt="" class="icon" /><br/>
+                                    <p>08 Nov</p><br/>
+                                    <p>09:00</p>
+                                </td>
+                                <td><img src="../assets/img/activo/estados/origen-verde.png" alt="" class="icon" /><br/>
+                                    <p>Recogido</p>
+                                </td>
+                                <td> <a href=" ">45S-6DF5G4</a><br/><a href="" class="btnTracking">Tracking Link</a></td>
+                                <td>
+                                    <p>Maricarmen Sanchez </p><br/>
+                                    <p>calle shel 454584, mifalores</p><br/>
+                                    <p>4512365</p>
+                                </td>
+                                <td>
+                                    <p>Rosa Davila</p><br/>
+                                    <p>av.reducto 54, miraflores</p><br/>
+                                    <p>1542654</p>
+                                </td>
+                                <td>
+                                    <p>carlos davila</p>
+                                </td>
+                                <td>
+                                    <p>105.00</p>
+                                </td>
+                            </tr>
+                            <tr class="DesglosePedido ocultar">
+                                <td colspan="7" style="text-align:center; padding:18px">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="col-md-4">
+                                                <h6>DETALLE</h6>
+                                                <div class="row">
+                                                    <div class="col-md-12 textInfo">
+                                                        <div class="col-md-8">
+                                                            <p>Distancia:</p><br/>
+                                                            <p>Medio de Pago:</p><br/>
+                                                            <p>Tamaño Paquete:</p>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <p>3KM</p><br/>
+                                                            <p>CREDITO</p><br/>
+                                                            <p>GRANDE</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h6>DESGLOSE DE PRECIO</h6>
+                                                <div class="row">
+                                                    <div class="col-md-12 textInfo">
+                                                        <div class="col-md-9">
+                                                            <p>Tarifa Base:</p><br/>
+                                                            <p>Precio Recaudo</p><br/>
+                                                            <p>Total</p>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <p>11.20</p><br/>
+                                                            <p>0.00</p><br/>
+                                                            <p>11.20</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <div class="col-md-12 mgt12"><a href="" class="btnDetallePedido"> Detalle Pedido</a></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 mgt12"><a href="" class="btnCancelarPedido"> Cancelar Pedido</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="row">
+                                <td><img src="../assets/img/activo/sameDay.png" alt="" class="icon" /><br/><br/>
+                                    <p>08 Nov</p><br/>
+                                    <p>09:00</p>
+                                </td>
+                                <td><img src="../assets/img/activo/estados/user.png" alt="" class="icon" /><br/>
+                                    <p>Pendiente</p>
+                                </td>
+                                <td> <a href=" ">45S-6DF5G4</a><br/><a href="" class="btnTracking">Tracking Link</a></td>
+                                <td>
+                                    <p>Maricarmen Sanchez </p><br/>
+                                    <p>calle shel 454584, mifalores</p><br/>
+                                    <p>4512365</p>
+                                </td>
+                                <td>
+                                    <p>Rosa Davila</p><br/>
+                                    <p>av.reducto 54, miraflores</p><br/>
+                                    <p>1542654</p>
+                                </td>
+                                <td>
+                                    <p>carlos davila</p>
+                                </td>
+                                <td>
+                                    <p>105.00</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+   
+</body>
+
+</html>

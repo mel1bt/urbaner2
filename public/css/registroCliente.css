@@ -1,0 +1,115 @@
+a {
+  color: #6caddf;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  width: 100%;
+}
+main {
+  top: 40px;
+  position: relative;
+}
+p {
+  color: #000;
+}
+.ocultar {
+  display: none;
+}
+.centrar {
+  text-align: center;
+}
+.headerCliente {
+  border-radius: 0px;
+  padding: 20px;
+  background: #303e47;
+  height: 68px;
+}
+.headerCliente figure {
+  margin: -5px 1em !important;
+}
+.headerCliente .headerCliente__logo img {
+  height: 40px;
+}
+.headerCliente .headerCliente__navegacion {
+  text-align: center;
+}
+.headerCliente .headerCliente__navegacion a {
+  color: #fff;
+}
+.headerCliente .headerCliente__iniciaSesion {
+  background: #6dcd5e;
+  border: none;
+  color: #fff !important;
+  padding: 5px 10px;
+  margin-left: 45px;
+}
+.headerCliente .headerCliente__registro {
+  background: #6dcd5e;
+  border: none;
+  color: #fff !important;
+  padding: 5px 10px;
+}
+h1,
+h2 {
+  color: #303e47;
+  font-weight: 400;
+}
+.registroCliente {
+  padding-bottom: 40px;
+}
+.registroCliente .registroCliente__content {
+  margin: 0 auto;
+  max-width: 910px;
+  min-width: 910px;
+  text-align: center;
+}
+.registroCliente .registroCliente__content h2 {
+  text-align: center;
+  margin: 0px 10px 40px 10px;
+}
+.registroCliente .registroCliente__content .typeAccount {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  background-color: #fff;
+  width: 94%;
+  border: 1px solid #ccc;
+img
+  width: 100%;
+  ul: li;
+  text-align: left;
+  font-size: 14px;
+}
+.registroCliente .registroCliente__content .enlace {
+  margin: 25px;
+}
+.registroCliente .registroCliente__content .enlace a {
+  background: #6dcd5e;
+  color: #fff;
+  padding: 12px 83px;
+  text-decoration: none !important;
+  border: 2px solid #6dcd5e;
+}
+.registroCliente .registroCliente__content .enlace a:hover {
+  background-color: #499871;
+  color: #fff;
+  font-weight: 400;
+  border: 2px solid #6dcd5e;
+}
+.registroCliente .registroCliente__content .info-box {
+  background-color: #fff;
+  border-radius: 0px;
+  border: 1px solid #303e47;
+  padding: 22px 68px;
+  max-width: 384px;
+}
+.registroCliente .registroCliente__content .row {
+  margin: 0 auto;
+}

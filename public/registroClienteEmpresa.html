@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Registro Cliente Empresa</title>
+    <link rel="stylesheet" href="../librerias/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../librerias/bootstrap/dist/css/bootstrap-flex.min.css" />
+    <link rel="stylesheet" href="css/registroClienteEmpresa.css" />
+</head>
+
+<body>
+    <header class="headerCliente container-fluid navbar">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row flex-items-xs-middle">
+                    <div class="col-md-12">
+                        <figure class="headerCliente__logo"><img src="img/logo.png" alt="logo de Urbaner" /></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="registroClienteEmpresa">
+        <div class="registroClienteEmpresa__content">
+            <section class="registroClienteEmpresa__content__item">
+                <article id="primeroRegistro" class="registroClienteEmpresa__content__item__datosEmpresa">
+                    <div class="row flex-items-xs-middle">
+                        <div class="col-md-12">
+                            <h2 class="centrar">REGÍSTRATE Y HAZ TUS ENVÍOS</h2>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5>Datos de la Empresa</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6"><input type="text" id="razonSocial" name="razonSocial" placeholder="* RAZÓN SOCIAL" /></div>
+                                <div class="col-md-6"><input type="text" id="rucEmpresa" name="rucEmpresa" maxlength="11" placeholder="* RUC" class="validateNumber" /></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12"><input type="text" id="direccionEmpresa" name="direccionEmpresa" placeholder="DIRECCIÓN " /></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6"><label>TIPO DE NEGOCIO</label><select class="registroClienteEmpresa__content__item__select"><option>Retail</option><option>E-commerce</option><option>Empresa de Servicio</option><option>Restaurante</option><option>Otros</option></select></div>
+                                <div class="col-md-6"><label>N° DE ENVÍOS</label><select class="registroClienteEmpresa__content__item__select"><option>Aún no estoy haciendo envíos</option><option>1 a 10</option><option>11 a 50</option><option>51 a 100</option><option>101 a 250</option><option>Más de 250</option></select></div>
+                            </div>
+                            <div class="row">
+                                <div class="registroClienteEmpresa__content__btnCreaCuentaEmpresa"><button id="btnSiguiente"> SIGUIENTE</button></div>
+                            </div>
+                            <div class="registroClienteEmpresa__content__aceptaTerminos">
+                                <p>Al hacer clic en "CREAR CUENTA" acepta los<a href=""> términos y Condiciones</a> de URBANER</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article id="segundoRegistro" class="registroClienteEmpresa__content__item__datosCuenta ocultar">
+                    <div class="row flex-items-xs-middle">
+                        <div class="col-md-12">
+                            <h2 class="centrar">REGÍSTRATE Y HAZ TUS ENVÍOS</h2>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5>Datos de la Cuenta</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12"><input type="text" id="nombreContacto" name="nombreContacto" placeholder="* NOMBRE DE CONTACTO" /></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12"><input type="text" id="emailEmpresa" name="emailEmpresa" placeholder="* EMAIL" /></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6"><input type="text" id="passwordEmpresa" name="contrasenaEmpresa" placeholder="CONTRASEÑA" /></div>
+                                <div class="col-md-6"><input type="text" id="confirmarPasswordEmpresa" name="confirmarEmpresa" placeholder=" CONFIRMAR CONTRASEÑA" /></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12"><input type="text" id="codigoCuponEmpresa" name="codigoCuponEmpresa" placeholder="CÓDIGO DE CUPÓN" /></div>
+                            </div>
+                            <div class="row">
+                                <div class="registroClienteEmpresa__content__btnCreaCuentaEmpresa"><button id="btnCrearCuenta"> CREAR CUENTA</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</body>
+
+</html>

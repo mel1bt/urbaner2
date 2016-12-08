@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Pedido Express</title>
+    <link rel="stylesheet" href="../librerias/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../librerias/bootstrap/dist/css/bootstrap-flex.min.css" />
+    <link rel="stylesheet" href="css/pedidoExpressSameDay.css" />
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+</head>
+
+<body>
+    <header class="headerCliente container-fluid navbar-fixed-top">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row flex-items-xs-middle">
+                    <div class="col-md-4">
+                        <figure class="headerCliente__logo">
+                            <a href=""><img src="img/logo.png" alt="logo de Urbaner" /></a>
+                        </figure>
+                    </div>
+                    <div class="col-md-8">
+                        <nav class="headerCliente__navegacion row">
+                            <div class="col-xs"><a href="activo.html">Activo</a></div>
+                            <div class="col-xs"><a href="">Historial</a></div>
+                            <div class="col-xs"><a href="">Borrador</a></div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row flex-items-xs-middle">
+                    <div class="col-md-6 headerCliente__saldo">
+                        <p>S/ 105.00</p>
+                        <p>Id User:<span id="idUser">52</span></p>
+                    </div>
+                    <div class="col-md-3"><button class="headerCliente__nuevoEnvio">NUEVO ENVÍO</button></div>
+                    <div class="col-md-3">
+                        <figure class="headerCliente__foto"><img src="img/cliente.jpg" class="rounded-circle" /></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="expressSameDay">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="expressSameDay__pedido">
+                    <section class="expressSameDay__pedido__blockA">
+                        <article>
+                            <div class="expressSameDay__pedido_blockA__title expressSameDay__pedido__blockA__title--origen row flex-items-xs-middle">
+                                <figure class="col-md-1"><img src="img/pedido/icon-origen.png" alt="icono de origen" /></figure>
+                                <h4 class="col-md-2">ORIGEN</h4>
+                                <div class="col-md-9"><a href="" style="display:block;padding-bottom:0.8em;">Utilizar dirección preterminada</a></div>
+                            </div>
+                            <div id="blockOrigen" class="expressSameDay__pedido__blockA__content expressSameDay__pedido__blockA__content--origen">
+                                <section class="origin model place destinations">
+                                    <div class="row">
+                                        <div style="display:none;" class="col-md-12">
+                                            <h3 name="orden" class="nroDestination">0</h3>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <p><input type="text" id="txtContacto--Origen" placeholder="Nombres de Contacto*" class="contactInput" /></p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <p><input type="text" id="txtTelefono--Origen" placeholder="N° de Telefonico*" maxlength="9" class="telephoneInput soloNumber" /></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <p><input type="text" name="txtDireccion--Origen" placeholder="Dirección*" class="originAddress addressInput" id="originAddress" onFocus="geolocate()"/></p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <p><input type="text" name="txtInterior--Origen" placeholder="Interior" class="insideInput" id="interior"/></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <p><input type="text" name="txtInstrucciones--Origen" placeholder="Instrucciones Especiales" class="instuctionsInput" /></p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <p><input type="text" name="txtEmail--Origen" placeholder="Correo Electronico" class="emailInput" id="email" /></p>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <article style="margin-top:17px;">
+                                <div class="expressSameDay__pedido__blockA__title row flex-items-xs-middle">
+                                    <figure class="col-md-1"><img src="img/pedido/icon-destino.png" alt="icono de destino" /></figure>
+                                    <h4 class="col-md-11">DESTINO</h4>
+                                </div>
+                                <div class="expressSameDay__pedido__blockA__content expressSameDay__pedido__blockA__content--destino">
+                                    <section class="destination model destinations">
+                                        <!--button(type="button", aria-label="close").close.closeDestination.ocultarspan(aria-hidden="true") &times;-->
+                                        <div class="row">
+                                            <div style="display:none;" class="col-md-12">
+                                                <h3 name="orden" class="nroDestination">1</h3>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <p><input type="text" name="txtContacto--Destino" placeholder="Nombres de Contacto*" class="contactInput" /></p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p><input type="text" id="txtTelefono--Destino" placeholder="N° de Telefonico*" ,="," maxlength="9" class="telephoneInput soloNumber" /></p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <p><input type="text" name="txtDireccion--Destino" placeholder="Dirección*" class="destinationAddress addressInput" id="destinoAddress" /></p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p><input type="text" name="txtInterior--Destino" placeholder="Interior" class="insideInput" id="txt-interior" /></p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <p><input type="text" name="txtInstrucciones--Destino" placeholder="Instrucciones Especiales" class="instuctionsInput" /></p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p><input type="text" id="txtEmail--Destino" name="txtEmail--Destino" placeholder="Correo Electronico" class="emailInput" /></p>
+                                            </div>
+                                        </div>
+                                        <div id="serviceRecaudoContent" class="row flex-items-xs-middle ocultar">
+                                            <div class="col-md-8">
+                                                <p><input type="text" name="txtRecaudo--Destino" placeholder="Monto Recaudo" class="recaudoInput" /></p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div id="serviceRecaudoItems" style="margin-top:10px;" class="row"></div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="expressSameDay__pedido__blockA__content__iconosDestino">
+                                        <div class="row">
+                                            <div class="col-xs">
+                                                <article>
+                                                    <a href="#" id="addDestination" class="row flex-items-xs-middle flex-items-xs-center">
+                                                        <div class="col-md-3">
+                                                            <figure><img src="img/pedido/icon-cruz.png" /></figure>
+                                                        </div>
+                                                        <div class="col-md-9 sinPaddingRight">
+                                                            <p>Agregar</p>
+                                                        </div>
+                                                    </a>
+                                                </article>
+                                            </div>
+                                            <div class="col-xs">
+                                                <article>
+                                                    <a href="#" id="btnReorder" class="row flex-items-xs-middle flex-items-xs-center">
+                                                        <div class="col-md-3">
+                                                            <figure><img src="img/pedido/icon-magic.png" /></figure>
+                                                        </div>
+                                                        <div class="col-md-9 sinPaddingRight">
+                                                            <p>Optimizar Ruta</p>
+                                                        </div>
+                                                    </a>
+                                                </article>
+                                            </div>
+                                            <div class="col-xs">
+                                                <article>
+                                                    <a href="#" class="row flex-items-xs-middle flex-items-xs-center">
+                                                        <div class="col-md-3">
+                                                            <figure><img src="img/pedido/icon-return.png" /></figure>
+                                                        </div>
+                                                        <div class="col-md-9 sinPaddingRight">
+                                                            <p>Retorno</p>
+                                                        </div>
+                                                    </a>
+                                                </article>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </article>
+                        </article>
+                    </section>
+                    <section class="expressSameDay__pedido__blockB">
+                        <h4>Información del Envío</h4>
+                        <div class="expressSameDay__pedido__blockB__content orderDetails">
+                            <div class="row flex-items-xs-center">
+                                <div class="col-xs">
+                                    <figure class="document"><img src="img/pedido/icon-bag.png" />
+                                        <figcaption>Documentos / Pequeño</figcaption>
+                                    </figure>
+                                    <p>Hasta 30x30x30cm ó 3kgs</p>
+                                </div>
+                                <div class="col-xs">
+                                    <figure class="smallbox"><img src="img/pedido/icon-box.png" />
+                                        <figcaption>Mediano</figcaption>
+                                    </figure>
+                                    <p>Hasta 45x45x35cm ó 15kgs</p>
+                                </div>
+                                <div class="col-xs">
+                                    <figure class="bigbox"><img src="img/pedido/icon-trolley.png" />
+                                        <figcaption>Grande</figcaption>
+                                    </figure>
+                                    <p>Hasta 90x70x50cm ó 20kgs</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs">
+                                    <p><input type="text" placeholder="Coloque su descripción" class="inputDescriptionOrder" /></p>
+                                </div>
+                                <div class="col-xs">
+                                    <p><input type="text" placeholder="Memo" class="inputMemoOrder" /></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="expressSameDay__pedido__blockC">
+                        <h4>Horario de Entrega</h4>
+                        <div class="expressSameDay__pedido__blockC__content">
+                            <div class="row flex-items-xs-middle">
+                                <div class="col-xs">
+                                    <div style="margin-bottom:0 !important;" class="form-group type_of_orders"></div>
+                                </div>
+                                <div class="col-xs-6 centrar">
+                                    <div class="expressSameDay__pedido__blockC__content__horaExpress">
+                                        <p>11:30 AM - 13:00 PM </p>
+                                    </div>
+                                    <div class="expressSameDay__pedido__blockC__content__horaSameDay ocultar"><select id="cbxPedidoSameDay"><option value="Mañana">Mañana</option><option value="Tarde">Tarde</option></select>
+                                        <p id="sameDayManana">09:00am - 03:00pm</p>
+                                        <p id="sameDayTarde" class="ocultar">03:00pm - 09:00pm</p>
+                                    </div>
+                                    <div class="expressSameDay__pedido__blockC__content__horaNextDay ocultar">
+                                        <p>09:00am - 06:00pm</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs centrar">
+                                    <div class="expressSameDay__pedido__blockC__content__montoExpress">
+                                        <p>S/. <span id="montoPagar">00.00</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <section style="margin-top:10px;">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <article class="row flex-items-xs-center centrar">
+                                        <div class="col-xs-4">
+                                            <p><strong>Tiempo</strong><span class="time" id="time"></span></p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p><strong>Distancia</strong><span class="distance" id="distance"></span></p>
+                                        </div>
+                                        <div class="col-xs-4 expressSameDay__pedido__blockC__recaudo__solicitarEntrega">  
+                                           <button id="btn-calcular-tiempo" class="btn-verde">Calcular tiempo</button>
+                                       </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="expressSameDay__pedido__blockC__recaudo">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <article>
+                                        <div class="form-check"><label class="form-check-label serviceRecaudo"><input type="checkbox" class="form-check-input"/><span>Servicio de Recaudo</span></label></div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="row flex-items-xs-midle">
+                                <div class="col-md-5">
+                                    <article><a href="#">Guardar Borrador</a></article>
+                                </div>
+                                <a class="btn-log col-md-7 expressSameDay__pedido__blockC__recaudo__solicitarEntrega"  role="button"><button type="submit" id="solicitarEntrega">SOLICITAR ENTREGA</button></a>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </div>
+            <div class="col-md-6 sinPaddingRL sidebar">
+                <div class="expressSameDay__mapa">
+                    <div id="mapa"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPB60PwXxrWJeR-ykF5pfNK9K90Ud68Y0&signed_in=true&libraries=places&callback=initAutocomplete" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/sweetalert.js"></script>
+    <script type="text/javascript" src="js/pedido.js"></script> 
+    <script type="text/javascript" src="js/app.js"></script>    
+</body>
+</html>

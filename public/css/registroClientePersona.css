@@ -1,0 +1,125 @@
+a {
+  color: #6caddf;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  width: 100%;
+}
+main {
+  top: 40px;
+  position: relative;
+}
+p {
+  color: #000;
+}
+.ocultar {
+  display: none;
+}
+.centrar {
+  text-align: center;
+}
+.headerCliente {
+  border-radius: 0px;
+  padding: 20px;
+  background: #303e47;
+  height: 68px;
+}
+.headerCliente figure {
+  margin: -5px 1em !important;
+}
+.headerCliente .headerCliente__logo img {
+  height: 40px;
+}
+.headerCliente .headerCliente__navegacion {
+  text-align: center;
+}
+.headerCliente .headerCliente__navegacion a {
+  color: #fff;
+}
+.headerCliente .headerCliente__iniciaSesion {
+  background: #6dcd5e;
+  border: none;
+  color: #fff !important;
+  padding: 5px 10px;
+  margin-left: 45px;
+}
+.headerCliente .headerCliente__registro {
+  background: #6dcd5e;
+  border: none;
+  color: #fff !important;
+  padding: 5px 10px;
+}
+.registroClientePersona .registroClientePersona__content {
+  margin: 0 auto;
+  width: 50%;
+}
+.registroClientePersona .registroClientePersona__content h2 {
+  font-weight: 400;
+}
+.registroClientePersona .registroClientePersona__content h5 {
+  margin-top: 25px;
+  font-weight: 400;
+}
+.registroClientePersona .registroClientePersona__content p {
+  color: #666;
+  font-size: 15px;
+}
+.registroClientePersona .registroClientePersona__content a {
+  text-decoration: none;
+}
+.registroClientePersona .registroClientePersona__content input[type="text"],
+.registroClientePersona .registroClientePersona__content input[type="password"] {
+  font-size: 13px;
+}
+.registroClientePersona .registroClientePersona__content input[type="text"]:active,
+.registroClientePersona .registroClientePersona__content input[type="password"]:active,
+.registroClientePersona .registroClientePersona__content input[type="text"]:focus,
+.registroClientePersona .registroClientePersona__content input[type="password"]:focus {
+  border-bottom: 2px solid #6dcd5e;
+}
+.registroClientePersona .registroClientePersona__content .row .col-md-12 .row:nth-of-type(1) {
+  margin-top: 28px;
+}
+.registroClientePersona .registroClientePersona__content .row .col-md-12 .row:nth-of-type(2),
+.registroClientePersona .registroClientePersona__content .row .col-md-12 .row:nth-of-type(3),
+.registroClientePersona .registroClientePersona__content .row .col-md-12 .row:nth-of-type(4),
+.registroClientePersona .registroClientePersona__content .row .col-md-12 .row:nth-of-type(5),
+.registroClientePersona .registroClientePersona__content .row .col-md-12 .row:nth-of-type(6),
+.registroClientePersona .registroClientePersona__content .row .col-md-12 .row:nth-of-type(7),
+.registroClientePersona .registroClientePersona__content .row .col-md-12 .row:nth-of-type(8) {
+  margin-top: 25px;
+}
+.registroClientePersona .registroClientePersona__content__btnCreaCuentaPersona {
+  margin-top: 28px;
+  margin-left: 12px;
+  margin-right: 12px;
+  width: 100%;
+}
+.registroClientePersona .registroClientePersona__content__btnCreaCuentaPersona button {
+  background-color: #6dcd5e;
+  border: 2px solid #6dcd5e;
+  color: #fff;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  padding: 11px 0px;
+  width: 100%;
+}
+.registroClientePersona .registroClientePersona__content__btnCreaCuentaPersona button:hover {
+  background-color: #fff;
+  color: #6dcd5e;
+  font-weight: bold;
+}
+.registroClientePersona .registroClientePersona__content__aceptaTerminos {
+  margin: 16px;
+}

@@ -1,0 +1,129 @@
+a {
+  color: #6caddf;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  width: 100%;
+}
+main {
+  top: 40px;
+  position: relative;
+}
+p {
+  color: #000;
+}
+.ocultar {
+  display: none;
+}
+.centrar {
+  text-align: center;
+}
+.headerCliente {
+  border-radius: 0px;
+  padding: 20px;
+  background: #303e47;
+  height: 68px;
+}
+.headerCliente figure {
+  margin: -5px 1em !important;
+}
+.headerCliente .headerCliente__logo img {
+  height: 40px;
+}
+.headerCliente .headerCliente__navegacion {
+  text-align: center;
+}
+.headerCliente .headerCliente__navegacion a {
+  color: #fff;
+}
+.headerCliente .headerCliente__iniciaSesion {
+  background: #6dcd5e;
+  border: none;
+  color: #fff !important;
+  padding: 5px 10px;
+  margin-left: 45px;
+}
+.headerCliente .headerCliente__registro {
+  background: #6dcd5e;
+  border: none;
+  color: #fff !important;
+  padding: 5px 10px;
+}
+.registroClienteEmpresa .registroClienteEmpresa__content {
+  margin: 0 auto;
+  width: 50%;
+  text-aling: center;
+}
+.registroClienteEmpresa .registroClienteEmpresa__content h2 {
+  color: #6dcd5e;
+  font-weight: 400;
+}
+.registroClienteEmpresa .registroClienteEmpresa__content h5 {
+  margin-top: 30px;
+  font-weight: 300;
+}
+.registroClienteEmpresa .registroClienteEmpresa__content p {
+  color: #666;
+  font-size: 15px;
+}
+.registroClienteEmpresa .registroClienteEmpresa__content a {
+  text-decoration: none;
+}
+.registroClienteEmpresa .registroClienteEmpresa__content label {
+  font-size: 13px;
+  color: #666;
+}
+.registroClienteEmpresa .registroClienteEmpresa__content input[type="text"] {
+  font-size: 13px;
+}
+.registroClienteEmpresa .registroClienteEmpresa__content input[type="text"]:active,
+.registroClienteEmpresa .registroClienteEmpresa__content input[type="text"]:focus {
+  border-bottom: 2px solid #6dcd5e;
+}
+.registroClienteEmpresa .registroClienteEmpresa__content .row .col-md-12 .row:nth-of-type(1) {
+  margin-top: 28px;
+}
+.registroClienteEmpresa .registroClienteEmpresa__content .row .col-md-12 .row:nth-of-type(2),
+.registroClienteEmpresa .registroClienteEmpresa__content .row .col-md-12 .row:nth-of-type(3),
+.registroClienteEmpresa .registroClienteEmpresa__content .row .col-md-12 .row:nth-of-type(4),
+.registroClienteEmpresa .registroClienteEmpresa__content .row .col-md-12 .row:nth-of-type(5),
+.registroClienteEmpresa .registroClienteEmpresa__content .row .col-md-12 .row:nth-of-type(6),
+.registroClienteEmpresa .registroClienteEmpresa__content .row .col-md-12 .row:nth-of-type(7),
+.registroClienteEmpresa .registroClienteEmpresa__content .row .col-md-12 .row:nth-of-type(8) {
+  margin-top: 28px;
+}
+.registroClienteEmpresa__content__item__select {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: #ccc;
+}
+.registroClienteEmpresa__content__btnCreaCuentaEmpresa {
+  margin-top: 28px;
+  margin-left: 12px;
+  margin-right: 12px;
+  width: 100%;
+}
+.registroClienteEmpresa__content__btnCreaCuentaEmpresa button {
+  border: 2px solid #6dcd5e;
+  color: #fff;
+  padding: 11px 0px;
+  background-color: #6dcd5e;
+  width: 100%;
+}
+.registroClienteEmpresa__content__btnCreaCuentaEmpresa button:hover {
+  background-color: #fff;
+  color: #6dcd5e;
+  font-weight: bold;
+}
+.registroClienteEmpresa__content__aceptaTerminos {
+  margin: 16px;
+}

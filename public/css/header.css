@@ -1,0 +1,135 @@
+a {
+  color: #6caddf;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  width: 100%;
+}
+input[type="text"]:active,
+input[type="email"]:active,
+input[type="password"]:active,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-bottom: 3px solid #6caddf;
+}
+input[type="checkbox"] {
+  cursor: pointer;
+}
+main {
+  top: 80px;
+  position: relative;
+}
+p {
+  color: #000;
+}
+.ocultar {
+  display: none;
+}
+.cursorMano {
+  cursor: pointer;
+}
+.centrar {
+  text-align: center;
+}
+.sinPaddingRL {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.sinPaddingRight {
+  padding-right: 0 !important;
+}
+.sidebar {
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  right: 0;
+  top: 50px;
+  z-index: 1000;
+}
+.btnVerdeClaro {
+  background: #6dcd5e;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+}
+.selectUrbaner {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background: #fff;
+  border: none !important;
+  border-bottom: 2px solid #ccc !important;
+  border-radius: 0 !important;
+  color: #02a388 !important;
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: box !important;
+  display: flex !important;
+  display: webkit-flex;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  -o-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  outline: none !important;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+}
+.selectUrbaner span:nth-of-type(1) {
+  margin-right: 15px;
+}
+.headerCliente {
+  -webkit-box-shadow: 0px 3px 2px #cbc9cf;
+  box-shadow: 0px 3px 2px #cbc9cf;
+  background: #303e47;
+  height: 75px;
+}
+.headerCliente figure {
+  margin: 1em 20px !important;
+}
+.headerCliente .headerCliente__foto img {
+  height: 48px;
+}
+.headerCliente .headerCliente__logo img {
+  height: 48px;
+}
+.headerCliente .headerCliente__navegacion {
+  text-align: center;
+}
+.headerCliente .headerCliente__navegacion a {
+  color: #fff;
+}
+.headerCliente .headerCliente__nuevoEnvio {
+  background: #6dcd5e;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+}
+.headerCliente .headerCliente__saldo p {
+  color: #fff;
+  margin: 0;
+  text-align: right;
+}

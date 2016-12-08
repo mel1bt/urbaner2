@@ -1,0 +1,60 @@
+/*headerPublic es exclusivo para la vista de registro cliente e iniciar sesión*/
+a {
+  color: #6caddf;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  width: 100%;
+}
+main {
+  top: 40px;
+  position: relative;
+}
+p {
+  color: #000;
+}
+.ocultar {
+  display: none;
+}
+.centrar {
+  text-align: center;
+}
+.headerCliente {
+  border-radius: 0px;
+  padding: 20px;
+  background: #303e47;
+  height: 68px;
+}
+.headerCliente figure {
+  margin: -5px 1em !important;
+}
+.headerCliente .headerCliente__logo img {
+  height: 40px;
+}
+.headerCliente .headerCliente__navegacion {
+  text-align: center;
+}
+.headerCliente .headerCliente__navegacion a {
+  color: #fff;
+}
+.headerCliente .headerCliente__iniciaSesion {
+  background: #6dcd5e;
+  border: none;
+  color: #fff !important;
+  padding: 5px 10px;
+  margin-left: 45px;
+}
+.headerCliente .headerCliente__registro {
+  background: #6dcd5e;
+  border: none;
+  color: #fff !important;
+  padding: 5px 10px;
+}

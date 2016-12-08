@@ -1,0 +1,114 @@
+a {
+  color: #6caddf;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  width: 100%;
+}
+main {
+  top: 40px;
+  position: relative;
+}
+p {
+  color: #000;
+}
+.ocultar {
+  display: none;
+}
+.centrar {
+  text-align: center;
+}
+.headerCliente {
+  border-radius: 0px;
+  padding: 20px;
+  background: #303e47;
+  height: 68px;
+}
+.headerCliente figure {
+  margin: -5px 1em !important;
+}
+.headerCliente .headerCliente__logo img {
+  height: 40px;
+}
+.headerCliente .headerCliente__navegacion {
+  text-align: center;
+}
+.headerCliente .headerCliente__navegacion a {
+  color: #fff;
+}
+.headerCliente .headerCliente__iniciaSesion {
+  background: #6dcd5e;
+  border: none;
+  color: #fff !important;
+  padding: 5px 10px;
+  margin-left: 45px;
+}
+.headerCliente .headerCliente__registro {
+  background: #6dcd5e;
+  border: none;
+  color: #fff !important;
+  padding: 5px 10px;
+}
+/*headerPublic es exclusivo para la vista de registro cliente e iniciar sesión*/
+.cambiaContrasena,
+.cambiaContrasena__content {
+  margin: 0 auto;
+  max-width: 390px;
+  margin-top: 25px;
+}
+.cambiaContrasena .texto,
+.cambiaContrasena__content .texto {
+  padding: 15px;
+}
+.cambiaContrasena h3,
+.cambiaContrasena__content h3 {
+  margin-bottom: 38px;
+}
+.cambiaContrasena input[type="text"],
+.cambiaContrasena__content input[type="text"],
+.cambiaContrasena input[type="password"],
+.cambiaContrasena__content input[type="password"] {
+  font-size: 14px;
+}
+.cambiaContrasena input[type="text"]:active,
+.cambiaContrasena__content input[type="text"]:active,
+.cambiaContrasena input[type="password"]:active,
+.cambiaContrasena__content input[type="password"]:active,
+.cambiaContrasena input[type="text"]:focus,
+.cambiaContrasena__content input[type="text"]:focus,
+.cambiaContrasena input[type="password"]:focus,
+.cambiaContrasena__content input[type="password"]:focus {
+  border-bottom: 2px solid #ccc;
+}
+.cambiaContrasena .row .col-md-12 .row:nth-of-type(1),
+.cambiaContrasena__content .row .col-md-12 .row:nth-of-type(1) {
+  margin-top: 28px;
+}
+.cambiaContrasena .row .col-md-12 .row:nth-of-type(2),
+.cambiaContrasena__content .row .col-md-12 .row:nth-of-type(2),
+.cambiaContrasena .row .col-md-12 .row:nth-of-type(3),
+.cambiaContrasena__content .row .col-md-12 .row:nth-of-type(3),
+.cambiaContrasena .row .col-md-12 .row:nth-of-type(4),
+.cambiaContrasena__content .row .col-md-12 .row:nth-of-type(4) {
+  margin-top: 40px;
+}
+.cambiaContrasena__content__btncambiaContrasena {
+  margin-left: 12px;
+  margin-right: 12px;
+  width: 100%;
+}
+.cambiaContrasena__content__btncambiaContrasena button {
+  border: 2px solid #6dcd5e;
+  color: #fff;
+  padding: 11px 0px;
+  background-color: #6dcd5e;
+  width: 100%;
+}

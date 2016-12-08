@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Login Cliente</title>
+    <link rel="stylesheet" href="../librerias/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../librerias/bootstrap/dist/css/bootstrap-flex.min.css" />
+    <link rel="stylesheet" href="css/loginCliente.css" />
+</head>
+
+<body>
+    <header class="headerCliente container-fluid navbar">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row flex-items-xs-middle">
+                    <div class="col-md-12">
+                        <figure class="headerCliente__logo"><img src="img/logo.png" alt="logo de Urbaner" /></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="loginCliente">
+        <div class="loginCliente__content">
+            <div class="row flex-items-xs-middle">
+                <div class="col-md-12">
+                    <h3 class="centrar">INICIAR SESIÓN</h3>
+                    <div class="row">
+                        <div class="col-md-12 loginCliente__content__btncontinuarFacebook"><a href="#" class="btn"> CONTINUAR CON FACEBOOK</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12"><input type="text" id="loginEmail" name="loginEmail" placeholder="EMAIL" /></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12"><input type="password" id="loginPassword" name="loginPassword" placeholder="CONTRASEÑA" /></div>
+                    </div>
+                    <div class="row">
+                        <div class="loginCliente__content__btnCreaCuentaPersona"><button id="btnLogin"> INICIAR SESIÓN</button></div>
+                    </div>
+                    <div class="loginCliente__content__olvidasteContrasena centrar"><a href="recuperaCuenta.html">¿Olvidó su Contraseña?</a></div>
+                    <div class="loginCliente__content__registroCliente centrar">
+                        <p>¿No tienes cuenta? <a href="registroCliente.html">Regístrate</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</body>
+
+</html>
